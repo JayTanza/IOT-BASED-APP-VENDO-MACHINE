@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:fillViewport="true"
+    tools:context=".LocationTracker">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="1653dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/toxicgreen"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/black"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/LocationView"
+                    android:layout_width="365dp"
+                    android:layout_height="280dp"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:drawablePadding="8dp"
+                    android:hint="ADDRESS"
+                    android:textColorHint="@color/silver"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen" />
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:drawablePadding="8dp"
+                    android:hint="CITY"
+                    android:textColorHint="@color/silver"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen" />
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:drawablePadding="8dp"
+                    android:hint="COUNTRY"
+                    android:textColorHint="@color/silver"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen" />
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:drawablePadding="8dp"
+                    android:hint="LATITUDE"
+                    android:textColorHint="@color/silver"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen" />
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:drawablePadding="8dp"
+                    android:hint="LONGITUDE"
+                    android:textColorHint="@color/silver"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen" />
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="GET LOCATION"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

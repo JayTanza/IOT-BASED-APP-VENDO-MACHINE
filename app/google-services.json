@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "631625029570",
+    "project_id": "jayvis-iot-app",
+    "storage_bucket": "jayvis-iot-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631625029570:android:d3da8ec2c9d2df2990685b",
+        "android_client_info": {
+          "package_name": "com.example.jayvisiotapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631625029570-k94vi6lbgtgm5n77fn3inqulo5riedaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWVeqISMSvrWQb-ISGXUCRJPbzfMcXLcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631625029570-k94vi6lbgtgm5n77fn3inqulo5riedaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

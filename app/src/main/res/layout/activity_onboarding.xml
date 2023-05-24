@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logojayvis" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="40dp"
+        app:cardBackgroundColor="@color/darkgrey"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/toxicgreen"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jarvis2" />
+
+            <TextView
+                android:layout_width="287dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Developed by: Project Padayon."
+                android:textColor="@color/limegreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="287dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="75dp"
+                android:gravity="center"
+                android:text="Developed by: Project Padayon."
+                android:textColor="@color/limegreen"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

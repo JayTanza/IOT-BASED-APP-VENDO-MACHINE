@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/iotlogo3" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/darkgrey">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/toxicgreen"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jarvis2" />
+
+            <Button
+                android:id="@+id/signin_button"
+                android:layout_width="265dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:text="LOG-IN"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="265dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="REGISTER"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="303dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="150dp"
+                android:gravity="center"
+                android:text="Developed by: Project Padayon."
+                android:textColor="@color/limegreen"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

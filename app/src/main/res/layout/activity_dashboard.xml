@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgx"
+    tools:context=".DashboardActivity">
+    <EditText
+        android:id="@+id/text"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="@string/you_will_see_text_here"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:autofillHints="hold mis and speak"
+        android:visibility="invisible"/>
+    <EditText
+        android:id="@+id/text2"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="@string/you_will_see_text_here"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:autofillHints="hold mis and speak"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="779dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/bg1"
+            android:elevation="10dp"
+            app:menu="@menu/common_menu">
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:src="@drawable/iotlogo3"
+                app:title="JAYVIS APP IOT"
+                app:titleTextColor="@color/limegreen" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="265dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:src="@drawable/jarvis2" />-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic2"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:title="JAYVIS APP IOT"
+                app:titleTextColor="@color/limegreen" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/darkgrey"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNavigationView"
+            android:layout_marginEnd="20dp"
+            app:labelVisibilityMode="labeled"
+            android:background="@android:color/transparent"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/bottom_menu"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/toxicgreen"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_mic_24"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="60dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Get Device"
+        android:id="@+id/getdevice"/>
+
+    <item
+        android:title="Connect bluetooth"
+        android:id="@+id/connect"/>
+
+    <item
+        android:title="GPS Tracker"
+        android:id="@+id/menu_tracker"/>
+    <item
+        android:title="Settings"
+        android:id="@+id/menu_settings"/>
+
+    <item
+        android:title="Change Password"
+        android:id="@+id/menu_change_password"/>
+
+    <item
+        android:title="Delete Profile"
+        android:id="@+id/menu_delete_profile"/>
+
+    <item
+        android:title="Logout"
+        android:id="@+id/menu_logout"/>
+</menu>

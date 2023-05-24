@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:fillViewport="true"
+    tools:context=".ProfileDetailsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="760dp">
+            <RelativeLayout
+                android:layout_width="420dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/bgphoto1"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:id="@+id/bgphoto1">
+
+                <ImageView
+                    android:id="@+id/ProfilePic1"
+                    android:layout_width="146dp"
+                    android:layout_height="134dp"
+                    android:layout_centerInParent="true" />
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ProfilePic1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="19dp"
+                    android:text="SOFTWARE ENGINEER"
+                    android:textColor="@color/limegreen"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="-2dp"
+                    android:text="JAY TANZA"
+                    android:textColor="@color/toxicgreen"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/toxicgreen"
+                android:backgroundTint="@color/darkgrey"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:layout_marginTop="360dp">
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Loading..."
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen"
+                    android:textColorHint="@color/silver" />
+
+                <TextView
+                    android:id="@+id/profile_DOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:drawableLeft="@drawable/baseline_edit_calendar_24"
+                    android:drawablePadding="8dp"
+                    android:focusable="false"
+                    android:hint="Loading..."
+                    android:inputType="date"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen"
+                    android:textColorHint="@color/silver" />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Loading..."
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen"
+                    android:textColorHint="@color/silver" />
+
+                <TextView
+                    android:id="@+id/profile_hpnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Loading..."
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/limegreen"
+                    android:textColorHint="@color/silver" />
+                <Button
+                    android:id="@+id/signup_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="EDIT PROFILE"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

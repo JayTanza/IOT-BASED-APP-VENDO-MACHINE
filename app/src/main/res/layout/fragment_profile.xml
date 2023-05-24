@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:fillViewport="true"
+    tools:context=".ProfileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="1653dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/toxicgreen"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:layout_marginTop="120dp"
+                    android:backgroundTint="@color/black">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BLUETOOTH CONTROL"
+                        android:textAlignment="center"
+                        android:textColor="@color/limegreen"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="get device"
+                        android:textSize="20sp"/>
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Connect bluetooth"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/black"
+                        android:drawablePadding="8dp"
+                        android:hint="Enter Text"
+                        android:textColorHint="@color/silver"
+                        android:padding="8dp"
+                        android:textColor="@color/limegreen" />
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/black"
+                        android:drawablePadding="8dp"
+                        android:hint="Enter Text"
+                        android:textColorHint="@color/silver"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:padding="8dp"
+                        android:textColor="@color/limegreen" />
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="TURN ON"
+                        android:textSize="20sp"/>
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="TURN OFF"
+                        android:textSize="20sp"/>
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="SEND DATA"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

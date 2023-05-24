@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:fillViewport="true"
+    tools:context=".SettingsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="760dp">
+
+            <LinearLayout
+                android:layout_width="385dp"
+                android:layout_height="805dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/statistics"
+                android:orientation="vertical" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

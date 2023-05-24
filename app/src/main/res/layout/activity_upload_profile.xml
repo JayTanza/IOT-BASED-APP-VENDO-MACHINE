@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgx"
+    android:fillViewport="true"
+    tools:context=".SettingsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="1653dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                app:cardBackgroundColor="@color/darkgrey">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/toxicgreen"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UPLOAD YOUR PROFILE PICTURE"
+                        android:textAlignment="center"
+                        android:textColor="@color/limegreen"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/chooseprofile_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="CHOOSE PICTURE"
+                        android:textSize="20sp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                        <ImageView
+                            android:id="@+id/uploadprofile_image"
+                            android:layout_width="250dp"
+                            android:layout_height="590dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/ic_baseline_person_pin_24" />
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/uploadprofile_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="UPLOAD PICTURE"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
